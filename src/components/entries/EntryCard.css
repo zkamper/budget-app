@@ -1,0 +1,47 @@
+.entryCard{
+    box-sizing: border-box;
+    border: solid;
+    height: 11rem;
+    margin: 2px;
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.entryCard#one{
+    background-color: rgb(39, 110, 40);
+}
+.entryCard#two{
+    background-color: rgb(34, 149, 34);
+}
+.entryCard#three{
+    background-color: rgb(66, 138, 61);
+}
+.entryCard#four{
+    background-color: rgb(42, 162, 42);
+}
+
+.entryCardDate{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteEntry{
+    background: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 3px;
+    width: 35px;
+    aspect-ratio: 1/1;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.deleteEntry:hover{
+    background-color: rgb(39, 84, 55);
+}

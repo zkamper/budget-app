@@ -1,0 +1,20 @@
+.Navbar{
+    position: relative;
+    background-color: rgb(24, 54, 39);
+    width: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+.Navbar1{
+    position: relative;
+    display: flex;
+    width: 5rem;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding-block: 0.5rem;
+}

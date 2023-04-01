@@ -1,0 +1,16 @@
+.entriesContainer{
+    background-color: rgb(41, 94, 68);
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    overflow: scroll auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    box-sizing: border-box;
+    padding: 9px;
+    justify-content: center;
+}

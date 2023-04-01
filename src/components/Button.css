@@ -1,0 +1,33 @@
+.Button {
+    background-color: #339236;
+    border: none;
+    color: white;
+    font-size: 11px;
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    border-radius: 50%;
+    transition: border-radius ease-in-out 0.15s;
+}
+
+.Button:hover{
+    border-radius: 25%;
+    background-color: #29782cd9;
+    cursor:pointer;
+}
+
+.icon{
+    width: 75%;
+    height: 75%;
+    transition: width height ease-in-out 0.4s;
+}
+
+.icon:hover{
+    width: 85%;
+    height: 85%;
+}
+
+.about > p{
+    text-align: center;
+    padding-inline: 30rem;
+}

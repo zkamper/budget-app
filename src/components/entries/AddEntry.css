@@ -1,0 +1,57 @@
+.addEntry{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 5px;
+    border-color: bisque;
+}
+
+.myform{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 15%;
+    font-weight: 400;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(20, 61, 20);
+    background-color: transparent;
+    width: 5rem;
+}
+
+input[type=text]{
+    width: 10rem;
+}
+
+.submitButton{
+    background-color: #339236;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10%;
+    transition: ease-in-out 15ms;
+    color: rgb(24, 54, 39);
+    font-weight: 500;
+}
+
+
+.submitButton:hover{
+    background-color: #29782cd9;
+    cursor:pointer;
+}
+
+.entriesDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    flex-grow: 1;
+    height: 25rem;
+    box-sizing: border-box;
+    background-color: #339236;
+    border-radius: 8px;
+}

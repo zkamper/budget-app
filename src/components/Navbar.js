@@ -1,5 +1,5 @@
 import Button from './Button';
-import './Navbar.css'
+import '../styles/Navbar.css'
 
 function Navbar(props){
     const {setMenu}=props

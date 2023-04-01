@@ -1,4 +1,4 @@
-import './Button.css'
+import '../styles/About.css'
 
 
 function About(props){

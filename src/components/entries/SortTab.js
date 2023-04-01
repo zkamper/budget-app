@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import './SortTab.css'
+import '../../styles/SortTab.css'
 
 const SortTab = (props) => {
 

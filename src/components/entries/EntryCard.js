@@ -1,6 +1,6 @@
 import React from 'react'
-import './EntryCard.css'
 import {BsFillTrashFill} from 'react-icons/bs'
+import '../../styles/EntryCard.css'
 
 const EntryCard = (props) => {
     

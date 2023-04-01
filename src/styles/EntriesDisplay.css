@@ -1,0 +1,11 @@
+.entriesDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+    flex-grow: 1;
+    height: 25rem;
+    box-sizing: border-box;
+    background-color: #339236;
+    border-radius: 8px;
+}

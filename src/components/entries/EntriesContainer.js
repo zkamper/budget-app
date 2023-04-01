@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import './EntriesContainer.css'
-import EntryCard from './EntryCard';
+import React from 'react'
+import '../../styles/EntriesContainer.css'
+import EntryCard from './EntryCard'
 
 const EntriesContainer = (props) => {
 

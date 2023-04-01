@@ -1,5 +1,7 @@
-import './DashboardContainer.css'
 import React from 'react'
+import '../../styles/DashboardContainer.css'
+
+const ONE_DAY = 24 * 3600 * 1000
 
 const DashboardContainer = (props) => {
 
@@ -15,9 +17,9 @@ const DashboardContainer = (props) => {
         begginingOfMonth = Date.parse(begginingOfMonth)
         for (const e of data) {
             let eventDate = Date.parse(e.date)
-            console.log(begginingOfMonth,eventDate,today)
+            //console.log(begginingOfMonth,eventDate,today)
             //console.log(e)
-            if (begginingOfMonth-24*3600*1000 <= eventDate && eventDate <= today) {
+            if (begginingOfMonth - ONE_DAY <= eventDate && eventDate <= today) {
                 sum += parseFloat(e.value)
                 //console.log(e);
             }
@@ -30,18 +32,19 @@ const DashboardContainer = (props) => {
         let sum = 0;
         let today = new Date()
         let day = today.getDay()
+        //This portion gets the day as a number from 1 to 7
         day--;
         if (day === -1)
             day = 6;
         day++;
-        let start = new Date() - day * 24 * 3600 * 1000
+        //
+        let start = new Date() - day * ONE_DAY
         let end = start + 7 * 24 * 3600 * 1000
         for (const e of data) {
             let eventDate = Date.parse(e.date)
-            if (start-24*3600*1000 <= eventDate && eventDate <= end+24*3600*1000) {
+            if (start - ONE_DAY <= eventDate && eventDate <= end + ONE_DAY) {
                 sum += parseFloat(e.value)
             }
-            
         }
         return sum;
     }
@@ -51,7 +54,6 @@ const DashboardContainer = (props) => {
         return (budget - sum) > 0 ?
             `${budget - sum} RON`
             : 'You\'ve used up your budget for this month'
-
     }
 
     return (

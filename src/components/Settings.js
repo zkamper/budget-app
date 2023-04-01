@@ -1,19 +1,19 @@
-import './Settings.css'
+import '../styles/Settings.css'
 
-function Settings(props){
+function Settings(props) {
 
-    const {budget,setBudget,setData} = props
+    const { budget, setBudget, setData } = props
 
     const handleBudget = (event) => {
         event.preventDefault();
         let newBudget = event.target.value
-        localStorage.setItem('my-project-budget',JSON.stringify(newBudget))
+        localStorage.setItem('my-project-budget', JSON.stringify(newBudget))
         setBudget(newBudget)
     }
 
     const deleteData = () => {
         let confirmation = window.confirm("Are you sure you want to delete your data?")
-        if(confirmation){
+        if (confirmation) {
             localStorage.removeItem('my-project-data');
             setData([]);
         }

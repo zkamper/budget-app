@@ -1,5 +1,5 @@
 import DashboardContainer from "./dashboard/DashboardContainer"
-import './Dashboard.css'
+import '../styles/Dashboard.css'
 
 function Dashboard(props){
 
